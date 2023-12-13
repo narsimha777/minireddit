@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+body{
+  background-color: #282c34;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +38,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-column-gap: 10px;
+  grid-template-rows: 35px;
+  margin: 20px;
+}
+
+.resultblock{
+  margin: 30px;
+  padding: 100px;
+}
+
+.result{
+ margin: 100px;
+ border-bottom: 2px solid orangered;
+ color: aliceblue;
+ padding: 100px 200px;
+}
+
+.title{
+  color: orangered;
+}
+
+.images{
+margin: 0 80px;
+}
+
+.additionals{
+  display: flex;
+  justify-content: space-around;
+}
+
+.popularblock{
+  display: flex;
+ margin-left: 33%;
+ /* align-items: center; */
+ text-align: center;
+  height: 500px;
+  width: 420px;
+}
+
+.popular{
+  margin-top: 80px;
+}
+
+.carosl{
+  color: aliceblue;
+}
+
+.text{
+  color: yellowgreen;
 }
