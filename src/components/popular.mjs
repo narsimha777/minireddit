@@ -9,8 +9,12 @@ export function Popular() {
     }
     function modify2(ele) {
         const media_id = ele.data.gallery_data.items[0].media_id;
-        const URL = ele.data.media_metadata[`${media_id}`].p[5].u;
-        const modifiedURL = URL.replace(/&amp;/g, '&');
+        let URL='';
+        let modifiedURL='';
+        if(media_id&&ele.data.media_metadata[`${media_id}`].p[5]){
+            URL = ele.data.media_metadata[`${media_id}`].p[5].u;
+          modifiedURL = URL.replace(/&amp;/g, '&');
+        }
         return modifiedURL;
     }
 

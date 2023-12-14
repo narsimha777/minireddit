@@ -24,7 +24,7 @@ export function Result({res1}){
                     <h3 className="title" id="offcanvasLabel">{ele.data.title}</h3>
                     <div className="images">
                         {ele.data.preview && (<img src={modify(ele)} className="img-fluid" alt="..." />)}
-                        {ele.data.gallery_data && (<img src={modify2(ele)} className="img-fluid" alt="..." />)}
+                        {/* {ele.data.gallery_data && (<img src={modify2(ele)} className="img-fluid" alt="..." />)} */}
                     </div>
                     <div className="content">
                         <h5>{ele.data.selftext}</h5>
